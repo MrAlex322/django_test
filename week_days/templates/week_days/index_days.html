@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Календарь</title>
+</head>
+<body>
+        {% for day in days_week %}
+            <li><a href="{% url 'week_days_name' sign_days=day %}">{{ day|title }}</a></li>
+        {% endfor %}
+</body>
+</html>
